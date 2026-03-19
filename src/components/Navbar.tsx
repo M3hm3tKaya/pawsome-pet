@@ -11,8 +11,8 @@ const links = [
   { href: "/hizmetler", label: "Hizmetler" },
   { href: "/odalar", label: "Odalar & Fiyatlar" },
   { href: "/galeri", label: "Galeri" },
-  { href: "/hakkimizda", label: "Hakkimizda" },
-  { href: "/iletisim", label: "Iletisim" },
+  { href: "/hakkimizda", label: "Hakkımızda" },
+  { href: "/iletisim", label: "İletişim" },
 ];
 
 function PawLogo() {

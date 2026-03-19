@@ -6,13 +6,13 @@ import WaveDivider from "@/components/WaveDivider";
 const services = [
   {
     title: "Konaklama",
-    desc: "Evcil hayvanlariniz icin sicak, guvenli ve konforlu konaklama hizmeti. Her oda duzenli olarak temizlenir ve dezenfekte edilir.",
+    desc: "Evcil hayvanlarınız için sıcak, güvenli ve konforlu konaklama hizmeti. Her oda düzenli olarak temizlenir ve dezenfekte edilir.",
     features: [
-      "Klimalı ve isitmalı odalar",
-      "Yumusak yataklar ve battaniyeler",
-      "Gunluk temizlik ve dezenfeksiyon",
-      "Ozel beslenme programi",
-      "24 saat gozetim",
+      "Klimalı ve ısıtmalı odalar",
+      "Yumuşak yataklar ve battaniyeler",
+      "Günlük temizlik ve dezenfeksiyon",
+      "Özel beslenme programı",
+      "24 saat gözetim",
     ],
     price: "250 - 600 TL/gece",
     color: "orange",
@@ -22,16 +22,16 @@ const services = [
     icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1",
   },
   {
-    title: "Gunluk Bakim",
-    desc: "Is yerinde veya tatildeyken evcil hayvaniniz gun boyu profesyonel bakicilarimizin gozetiminde eglenceli vakit gecirir.",
+    title: "Günlük Bakım",
+    desc: "İş yerinde veya tatildeyken evcil hayvanınız gün boyu profesyonel bakıcılarımızın gözetiminde eğlenceli vakit geçirir.",
     features: [
-      "Sabah kahvaltisi ve oglen yemegi",
+      "Sabah kahvaltısı ve öğlen yemeği",
       "Grup oyun saatleri",
       "Bireysel ilgi ve sevgi",
-      "Bahcede yuruyus",
-      "Sosyallesme aktiviteleri",
+      "Bahçede yürüyüş",
+      "Sosyalleşme aktiviteleri",
     ],
-    price: "150 - 300 TL/gun",
+    price: "150 - 300 TL/gün",
     color: "teal",
     bgColor: "bg-teal-light",
     textColor: "text-teal",
@@ -39,14 +39,14 @@ const services = [
     icon: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z",
   },
   {
-    title: "Spa & Bakim",
-    desc: "Profesyonel grooming ekibimiz ile evcil hayvaniniz piril piril olsun. Ozel urunlerle cildi ve tuyleri bakimli kalir.",
+    title: "Spa & Bakım",
+    desc: "Profesyonel grooming ekibimiz ile evcil hayvanınız pırıl pırıl olsun. Özel ürünlerle cildi ve tüyleri bakımlı kalır.",
     features: [
-      "Yikama ve kurutma",
-      "Tirnak kesimi",
-      "Kulak temizligi",
-      "Tuy kesimi ve sekillendirme",
-      "Rahatlatici masaj",
+      "Yıkama ve kurutma",
+      "Tırnak kesimi",
+      "Kulak temizliği",
+      "Tüy kesimi ve şekillendirme",
+      "Rahatlatıcı masaj",
     ],
     price: "100 - 400 TL",
     color: "pink",
@@ -56,14 +56,14 @@ const services = [
     icon: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
   },
   {
-    title: "Egitim",
-    desc: "Deneyimli egitmenlerimiz ile kopekleriniz temel itaat komutlarini ve iyi davranislari ogrenir.",
+    title: "Eğitim",
+    desc: "Deneyimli eğitmenlerimiz ile köpekleriniz temel itaat komutlarını ve iyi davranışları öğrenir.",
     features: [
-      "Temel itaat egitimi (otur, gel, yat)",
-      "Tasma egitimi",
-      "Sosyallesme programi",
-      "Problem davranis cozumu",
-      "Bireysel egitim seanslari",
+      "Temel itaat eğitimi (otur, gel, yat)",
+      "Tasma eğitimi",
+      "Sosyalleşme programı",
+      "Problem davranış çözümü",
+      "Bireysel eğitim seansları",
     ],
     price: "200 - 500 TL/seans",
     color: "blue",
@@ -85,7 +85,7 @@ export default function HizmetlerPage() {
               Hizmetlerimiz
             </h1>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto text-lg">
-              Evcil hayvanlariniz icin en kaliteli bakim ve konaklama hizmetlerini sunuyoruz.
+              Evcil hayvanlarınız için en kaliteli bakım ve konaklama hizmetlerini sunuyoruz.
             </p>
           </AnimatedSection>
         </div>
@@ -147,16 +147,16 @@ export default function HizmetlerPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">
-              Hizmetlerimiz Hakkinda Sorulariniz mi Var?
+              Hizmetlerimiz Hakkında Sorularınız mı Var?
             </h2>
             <p className="text-dark-brown/60 font-body mb-8 max-w-xl mx-auto">
-              Bize ulasin, evcil hayvaniniz icin en uygun hizmeti birlikte belirleyelim.
+              Bize ulaşın, evcil hayvanınız için en uygun hizmeti birlikte belirleyelim.
             </p>
             <a
               href="/iletisim"
               className="pill-btn bg-orange text-white text-lg shadow-lg shadow-orange/30"
             >
-              Bize Ulasin
+              Bize Ulaşın
             </a>
           </AnimatedSection>
         </div>

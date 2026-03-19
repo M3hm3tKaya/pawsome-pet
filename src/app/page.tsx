@@ -8,7 +8,7 @@ import WaveDivider from "@/components/WaveDivider";
 const services = [
   {
     title: "Konaklama",
-    desc: "Sicak ve konforlu odalarda gecelik konaklama hizmeti.",
+    desc: "Sıcak ve konforlu odalarda gecelik konaklama hizmeti.",
     icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1",
     color: "orange",
     bg: "bg-orange-light",
@@ -16,8 +16,8 @@ const services = [
     textColor: "text-orange",
   },
   {
-    title: "Gunluk Bakim",
-    desc: "Gun boyu oyun, sosyallesme ve profesyonel bakim.",
+    title: "Günlük Bakım",
+    desc: "Gün boyu oyun, sosyalleşme ve profesyonel bakım.",
     icon: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z",
     color: "teal",
     bg: "bg-teal-light",
@@ -25,8 +25,8 @@ const services = [
     textColor: "text-teal",
   },
   {
-    title: "Spa & Bakim",
-    desc: "Yikama, tirnak kesimi, tuy bakimi ve masaj hizmetleri.",
+    title: "Spa & Bakım",
+    desc: "Yıkama, tırnak kesimi, tüy bakımı ve masaj hizmetleri.",
     icon: "M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01",
     color: "pink",
     bg: "bg-pink-light",
@@ -34,8 +34,8 @@ const services = [
     textColor: "text-pink",
   },
   {
-    title: "Egitim",
-    desc: "Temel itaat ve davranis egitimi programlari.",
+    title: "Eğitim",
+    desc: "Temel itaat ve davranış eğitimi programları.",
     icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
     color: "blue",
     bg: "bg-blue-light",
@@ -45,24 +45,24 @@ const services = [
 ];
 
 const whyUs = [
-  { text: "7/24 veteriner destek hatti", color: "text-orange" },
-  { text: "Canli kamera ile takip imkani", color: "text-teal" },
-  { text: "Genis bahce ve oyun alanlari", color: "text-pink" },
-  { text: "10+ yillik deneyimli ekip", color: "text-blue" },
+  { text: "7/24 veteriner destek hattı", color: "text-orange" },
+  { text: "Canlı kamera ile takip imkanı", color: "text-teal" },
+  { text: "Geniş bahçe ve oyun alanları", color: "text-pink" },
+  { text: "10+ yıllık deneyimli ekip", color: "text-blue" },
 ];
 
 const rooms = [
   {
     name: "Standart Oda",
     price: "250",
-    features: ["Konforlu yatak", "Gunluk temizlik", "Oyun saatleri"],
+    features: ["Konforlu yatak", "Günlük temizlik", "Oyun saatleri"],
     color: "border-teal",
     badge: "bg-teal text-white",
   },
   {
     name: "Deluxe Oda",
     price: "400",
-    features: ["Genis alan", "Ozel bahce erisimi", "Gunluk spa", "Canli kamera"],
+    features: ["Geniş alan", "Özel bahçe erişimi", "Günlük spa", "Canlı kamera"],
     color: "border-orange",
     badge: "bg-orange text-white",
     popular: true,
@@ -70,7 +70,7 @@ const rooms = [
   {
     name: "VIP Suite",
     price: "600",
-    features: ["En genis suite", "Ozel bahce", "7/24 bakim", "Canli kamera", "Gunluk rapor"],
+    features: ["En geniş suite", "Özel bahçe", "7/24 bakım", "Canlı kamera", "Günlük rapor"],
     color: "border-pink",
     badge: "bg-pink text-white",
   },
@@ -78,21 +78,21 @@ const rooms = [
 
 const testimonials = [
   {
-    name: "Ayse K.",
+    name: "Ayşe K.",
     pet: "Golden Retriever - Luna",
-    text: "Luna her zaman mutlu donuyor! Ekip harika, odalari tertemiz. Kesinlikle tavsiye ederim.",
+    text: "Luna her zaman mutlu dönüyor! Ekip harika, odaları tertemiz. Kesinlikle tavsiye ederim.",
     rating: 5,
   },
   {
     name: "Mehmet T.",
     pet: "British Shorthair - Boncuk",
-    text: "Kedi otellerinde en iyisi. Boncuk burada cok huzurlu. Canli kamera ozelligini cok sevdik.",
+    text: "Kedi otellerinde en iyisi. Boncuk burada çok huzurlu. Canlı kamera özelliğini çok sevdik.",
     rating: 5,
   },
   {
     name: "Zeynep A.",
     pet: "Poodle - Pamuk",
-    text: "Spa hizmeti muhtesem! Pamuk her seferinde piril piril donuyor. Fiyatlar da makul.",
+    text: "Spa hizmeti muhteşem! Pamuk her seferinde pırıl pırıl dönüyor. Fiyatlar da makul.",
     rating: 5,
   },
 ];
@@ -117,15 +117,15 @@ export default function Home() {
                   <ellipse cx="15" cy="55" rx="10" ry="12" />
                   <ellipse cx="85" cy="55" rx="10" ry="12" />
                 </svg>
-                Istanbul Cekmekoy
+                İstanbul Çekmeköy
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark-brown leading-tight mb-6">
-                Evcil Dostunuz Icin{" "}
+                Evcil Dostunuz İçin{" "}
                 <span className="text-orange">Pawsome</span> Bir Tatil!
               </h1>
               <p className="text-lg text-dark-brown/70 font-body mb-8 max-w-lg">
-                Kopek ve kedileriniz icin 5 yildizli konaklama, spa, egitim ve
-                gunluk bakim hizmetleri. Onlar da tatili hak ediyor!
+                Köpek ve kedileriniz için 5 yıldızlı konaklama, spa, eğitim ve
+                günlük bakım hizmetleri. Onlar da tatili hak ediyor!
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -145,7 +145,7 @@ export default function Home() {
                   href="/odalar"
                   className="pill-btn border-2 border-dark-brown/20 text-dark-brown hover:border-orange hover:text-orange text-lg"
                 >
-                  Odalari Incele
+                  Odaları İncele
                 </Link>
               </div>
             </motion.div>
@@ -183,7 +183,7 @@ export default function Home() {
               Hizmetlerimiz
             </h2>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto">
-              Evcil hayvanlariniz icin en iyi bakim ve konaklama hizmetlerini sunuyoruz.
+              Evcil hayvanlarınız için en iyi bakım ve konaklama hizmetlerini sunuyoruz.
             </p>
           </AnimatedSection>
 
@@ -220,7 +220,7 @@ export default function Home() {
                 Neden <span className="text-orange">Pawsome</span>?
               </h2>
               <p className="text-dark-brown/60 font-body mb-8">
-                10 yildir Istanbul&apos;un en guvenilir evcil hayvan oteli olarak hizmet veriyoruz.
+                10 yıldır İstanbul&apos;un en güvenilir evcil hayvan oteli olarak hizmet veriyoruz.
               </p>
               <div className="space-y-4">
                 {whyUs.map((item, i) => (
@@ -242,7 +242,7 @@ export default function Home() {
               <div className="aspect-[4/3] bg-gradient-to-br from-teal-light to-orange-light rounded-[24px] flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-orange mb-2">10+</div>
-                  <div className="text-dark-brown/60 font-body">Yillik Deneyim</div>
+                  <div className="text-dark-brown/60 font-body">Yıllık Deneyim</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -260,7 +260,7 @@ export default function Home() {
               Oda Tiplerimiz
             </h2>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto">
-              Her butceye ve ihtiyaca uygun konforlu odalarimiz.
+              Her bütçeye ve ihtiyaca uygun konforlu odalarımız.
             </p>
           </AnimatedSection>
 
@@ -273,7 +273,7 @@ export default function Home() {
                   {room.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                       <span className="px-4 py-1 bg-orange text-white text-xs font-heading font-bold rounded-full shadow-lg">
-                        Populer
+                        Popüler
                       </span>
                     </div>
                   )}
@@ -314,7 +314,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">
-              Mutlu Dostlarimiz
+              Mutlu Dostlarımız
             </h2>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto">
               Misafirlerimizin deneyimlerini dinleyin.
@@ -346,22 +346,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Canli Kamera CTA */}
+      {/* Canlı Kamera CTA */}
       <section className="relative overflow-hidden">
         <div className="bg-gradient-to-r from-orange via-pink to-teal py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Canli Kamera ile Takip Edin
+                Canlı Kamera ile Takip Edin
               </h2>
               <p className="text-white/80 font-body mb-8 max-w-2xl mx-auto">
-                Evcil hayvaninizi her an izleyebilirsiniz. Deluxe ve VIP odalarda canli kamera erisimi.
+                Evcil hayvanınızı her an izleyebilirsiniz. Deluxe ve VIP odalarda canlı kamera erişimi.
               </p>
               <Link
                 href="/odalar"
                 className="pill-btn bg-white text-orange text-lg shadow-lg hover:shadow-xl"
               >
-                Odalari Kesfet
+                Odaları Keşfet
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>

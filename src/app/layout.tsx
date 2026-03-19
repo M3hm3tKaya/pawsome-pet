@@ -6,9 +6,9 @@ import PawPrints from "@/components/PawPrints";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
-  title: "Pawsome Pet Hotel | Istanbul Cekmekoy Evcil Hayvan Oteli",
+  title: "Pawsome Pet Hotel | İstanbul Çekmeköy Evcil Hayvan Oteli",
   description:
-    "Istanbul Cekmekoy'de evcil hayvanlariniz icin konaklama, gunluk bakim, spa ve egitim hizmetleri sunan sicak ve guvenli pet otel.",
+    "İstanbul Çekmeköy'de evcil hayvanlarınız için konaklama, günlük bakım, spa ve eğitim hizmetleri sunan sıcak ve güvenli pet otel.",
 };
 
 export default function RootLayout({

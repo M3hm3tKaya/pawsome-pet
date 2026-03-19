@@ -6,7 +6,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import WaveDivider from "@/components/WaveDivider";
 import clsx from "clsx";
 
-type Category = "Hepsi" | "Kopekler" | "Kediler" | "Odalar" | "Bahce" | "Spa";
+type Category = "Hepsi" | "Köpekler" | "Kediler" | "Odalar" | "Bahçe" | "Spa";
 
 interface GalleryItem {
   id: number;
@@ -17,21 +17,21 @@ interface GalleryItem {
   aspectClass: string;
 }
 
-const categories: Category[] = ["Hepsi", "Kopekler", "Kediler", "Odalar", "Bahce", "Spa"];
+const categories: Category[] = ["Hepsi", "Köpekler", "Kediler", "Odalar", "Bahçe", "Spa"];
 
 const galleryItems: GalleryItem[] = [
-  { id: 1, category: "Kopekler", title: "Bahcede oynayan Golden Retriever", color: "text-orange", bgGradient: "from-orange-light to-pink-light", aspectClass: "aspect-[3/4]" },
-  { id: 2, category: "Kediler", title: "Pencere kenarinda uyuyan kedi", color: "text-teal", bgGradient: "from-teal-light to-blue-light", aspectClass: "aspect-square" },
-  { id: 3, category: "Odalar", title: "Deluxe oda ic gorunum", color: "text-pink", bgGradient: "from-pink-light to-orange-light", aspectClass: "aspect-[4/3]" },
-  { id: 4, category: "Bahce", title: "Genis bahce alani", color: "text-teal", bgGradient: "from-teal-light to-warm-white", aspectClass: "aspect-[3/4]" },
-  { id: 5, category: "Spa", title: "Yikama ve bakim", color: "text-pink", bgGradient: "from-pink-light to-teal-light", aspectClass: "aspect-square" },
-  { id: 6, category: "Kopekler", title: "Grup oyun saati", color: "text-orange", bgGradient: "from-orange-light to-teal-light", aspectClass: "aspect-[4/3]" },
-  { id: 7, category: "Kediler", title: "Kedi oyun odasi", color: "text-teal", bgGradient: "from-blue-light to-teal-light", aspectClass: "aspect-[3/4]" },
+  { id: 1, category: "Köpekler", title: "Bahçede oynayan Golden Retriever", color: "text-orange", bgGradient: "from-orange-light to-pink-light", aspectClass: "aspect-[3/4]" },
+  { id: 2, category: "Kediler", title: "Pencere kenarında uyuyan kedi", color: "text-teal", bgGradient: "from-teal-light to-blue-light", aspectClass: "aspect-square" },
+  { id: 3, category: "Odalar", title: "Deluxe oda iç görünüm", color: "text-pink", bgGradient: "from-pink-light to-orange-light", aspectClass: "aspect-[4/3]" },
+  { id: 4, category: "Bahçe", title: "Geniş bahçe alanı", color: "text-teal", bgGradient: "from-teal-light to-warm-white", aspectClass: "aspect-[3/4]" },
+  { id: 5, category: "Spa", title: "Yıkama ve bakım", color: "text-pink", bgGradient: "from-pink-light to-teal-light", aspectClass: "aspect-square" },
+  { id: 6, category: "Köpekler", title: "Grup oyun saati", color: "text-orange", bgGradient: "from-orange-light to-teal-light", aspectClass: "aspect-[4/3]" },
+  { id: 7, category: "Kediler", title: "Kedi oyun odası", color: "text-teal", bgGradient: "from-blue-light to-teal-light", aspectClass: "aspect-[3/4]" },
   { id: 8, category: "Odalar", title: "VIP Suite", color: "text-pink", bgGradient: "from-pink-light to-warm-white", aspectClass: "aspect-square" },
-  { id: 9, category: "Bahce", title: "Agility parkuru", color: "text-blue", bgGradient: "from-blue-light to-teal-light", aspectClass: "aspect-[4/3]" },
-  { id: 10, category: "Spa", title: "Tuy bakimi", color: "text-pink", bgGradient: "from-pink-light to-orange-light", aspectClass: "aspect-[3/4]" },
-  { id: 11, category: "Kopekler", title: "Yuruyus zamani", color: "text-orange", bgGradient: "from-orange-light to-warm-white", aspectClass: "aspect-square" },
-  { id: 12, category: "Kediler", title: "Sicak koltuklarda keyif", color: "text-teal", bgGradient: "from-teal-light to-pink-light", aspectClass: "aspect-[4/3]" },
+  { id: 9, category: "Bahçe", title: "Agility parkuru", color: "text-blue", bgGradient: "from-blue-light to-teal-light", aspectClass: "aspect-[4/3]" },
+  { id: 10, category: "Spa", title: "Tüy bakımı", color: "text-pink", bgGradient: "from-pink-light to-orange-light", aspectClass: "aspect-[3/4]" },
+  { id: 11, category: "Köpekler", title: "Yürüyüş zamanı", color: "text-orange", bgGradient: "from-orange-light to-warm-white", aspectClass: "aspect-square" },
+  { id: 12, category: "Kediler", title: "Sıcak koltuklarda keyif", color: "text-teal", bgGradient: "from-teal-light to-pink-light", aspectClass: "aspect-[4/3]" },
 ];
 
 export default function GaleriPage() {
@@ -63,7 +63,7 @@ export default function GaleriPage() {
       {/* Filtre & Grid */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filtre butonlari */}
+          {/* Filtre butonları */}
           <AnimatedSection className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
               <button

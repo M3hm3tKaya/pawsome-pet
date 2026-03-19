@@ -40,7 +40,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/70 text-sm font-body leading-relaxed">
-              Istanbul Cekmekoy&apos;de evcil hayvanlariniz icin en sicak ve guvenli otel deneyimi.
+              İstanbul Çekmeköy&apos;de evcil hayvanlarınız için en sıcak ve güvenli otel deneyimi.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
               <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Hizmetler</Link></li>
               <li><Link href="/odalar" className="text-white/70 hover:text-orange transition-colors">Odalar & Fiyatlar</Link></li>
               <li><Link href="/galeri" className="text-white/70 hover:text-orange transition-colors">Galeri</Link></li>
-              <li><Link href="/hakkimizda" className="text-white/70 hover:text-orange transition-colors">Hakkimizda</Link></li>
+              <li><Link href="/hakkimizda" className="text-white/70 hover:text-orange transition-colors">Hakkımızda</Link></li>
             </ul>
           </div>
 
@@ -59,21 +59,21 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-orange mb-4">Hizmetler</h4>
             <ul className="space-y-2 text-sm font-body">
               <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Konaklama</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Gunluk Bakim</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Spa & Bakim</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Egitim</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Günlük Bakım</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Spa & Bakım</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Eğitim</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-heading font-bold text-orange mb-4">Iletisim</h4>
+            <h4 className="font-heading font-bold text-orange mb-4">İletişim</h4>
             <ul className="space-y-3 text-sm font-body text-white/70">
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 mt-0.5 text-orange shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Cekmekoy, Istanbul
+                Çekmeköy, İstanbul
               </li>
               <li className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-orange shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/50 font-body">
-          <p>&copy; 2026 Pawsome Pet Hotel. Tum haklari saklidir.</p>
+          <p>&copy; 2026 Pawsome Pet Hotel. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>

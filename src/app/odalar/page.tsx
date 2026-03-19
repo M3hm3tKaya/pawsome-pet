@@ -8,13 +8,13 @@ const rooms = [
   {
     name: "Standart Oda",
     price: "250",
-    description: "Rahat ve temiz, temel ihtiyaclar icin ideal. Gunluk temizlik ve duzenli beslenme programi dahil.",
+    description: "Rahat ve temiz, temel ihtiyaçlar için ideal. Günlük temizlik ve düzenli beslenme programı dahil.",
     features: [
       "8 m² alan",
       "Konforlu yatak",
-      "Klima / Isitma",
-      "Gunluk temizlik",
-      "2 ogun yemek",
+      "Klima / Isıtma",
+      "Günlük temizlik",
+      "2 öğün yemek",
       "Oyun saatleri",
     ],
     color: "teal",
@@ -25,16 +25,16 @@ const rooms = [
   {
     name: "Deluxe Oda",
     price: "400",
-    description: "Genis alan, ozel bahce erisimi ve canli kamera ile premium deneyim. En populer secimiz.",
+    description: "Geniş alan, özel bahçe erişimi ve canlı kamera ile premium deneyim. En popüler seçimimiz.",
     features: [
       "15 m² alan",
       "Ortopedik yatak",
-      "Klima / Isitma",
-      "Gunluk temizlik",
-      "3 ogun yemek + atistirmalik",
-      "Ozel bahce erisimi",
-      "Canli kamera",
-      "Gunluk spa bakimi",
+      "Klima / Isıtma",
+      "Günlük temizlik",
+      "3 öğün yemek + atıştırmalık",
+      "Özel bahçe erişimi",
+      "Canlı kamera",
+      "Günlük spa bakımı",
     ],
     color: "orange",
     bgColor: "bg-orange-light",
@@ -45,18 +45,18 @@ const rooms = [
   {
     name: "VIP Suite",
     price: "600",
-    description: "En genis suite odamiz. Ozel bahce, 7/24 ozel bakim ve gunluk detayli rapor ile en iyi deneyim.",
+    description: "En geniş suite odamız. Özel bahçe, 7/24 özel bakım ve günlük detaylı rapor ile en iyi deneyim.",
     features: [
       "25 m² suite",
       "Premium ortopedik yatak",
-      "Klima / Isitma",
-      "Gunluk temizlik (2 kez)",
-      "Ozel menu",
-      "Ozel bahce",
-      "7/24 canli kamera",
-      "Gunluk spa & masaj",
-      "Gunluk rapor & foto",
-      "Veteriner kontrolu",
+      "Klima / Isıtma",
+      "Günlük temizlik (2 kez)",
+      "Özel menü",
+      "Özel bahçe",
+      "7/24 canlı kamera",
+      "Günlük spa & masaj",
+      "Günlük rapor & foto",
+      "Veteriner kontrolü",
     ],
     color: "pink",
     bgColor: "bg-pink-light",
@@ -68,20 +68,20 @@ const rooms = [
 const comparison = [
   { feature: "Oda Boyutu", standart: "8 m²", deluxe: "15 m²", vip: "25 m²" },
   { feature: "Yatak", standart: "Standart", deluxe: "Ortopedik", vip: "Premium Ortopedik" },
-  { feature: "Yemek", standart: "2 ogun", deluxe: "3 ogun + atistirmalik", vip: "Ozel menu" },
-  { feature: "Bahce Erisimi", standart: "Ortak", deluxe: "Ozel", vip: "Ozel" },
-  { feature: "Canli Kamera", standart: "-", deluxe: "Var", vip: "7/24" },
-  { feature: "Spa / Masaj", standart: "-", deluxe: "Gunluk", vip: "Gunluk + Masaj" },
-  { feature: "Rapor", standart: "-", deluxe: "-", vip: "Gunluk" },
-  { feature: "Veteriner", standart: "Acil", deluxe: "Acil", vip: "Gunluk kontrol" },
+  { feature: "Yemek", standart: "2 öğün", deluxe: "3 öğün + atıştırmalık", vip: "Özel menü" },
+  { feature: "Bahçe Erişimi", standart: "Ortak", deluxe: "Özel", vip: "Özel" },
+  { feature: "Canlı Kamera", standart: "-", deluxe: "Var", vip: "7/24" },
+  { feature: "Spa / Masaj", standart: "-", deluxe: "Günlük", vip: "Günlük + Masaj" },
+  { feature: "Rapor", standart: "-", deluxe: "-", vip: "Günlük" },
+  { feature: "Veteriner", standart: "Acil", deluxe: "Acil", vip: "Günlük kontrol" },
 ];
 
 const extras = [
-  { name: "Ek Yuruyus (30 dk)", price: "50 TL", color: "text-orange" },
-  { name: "Ozel Oyun Seansi", price: "75 TL", color: "text-teal" },
-  { name: "Fotograf & Video Rapor", price: "30 TL/gun", color: "text-pink" },
-  { name: "Ozel Diyet Menu", price: "40 TL/gun", color: "text-blue" },
-  { name: "Ilac Uygulama", price: "25 TL/gun", color: "text-orange" },
+  { name: "Ek Yürüyüş (30 dk)", price: "50 TL", color: "text-orange" },
+  { name: "Özel Oyun Seansı", price: "75 TL", color: "text-teal" },
+  { name: "Fotoğraf & Video Rapor", price: "30 TL/gün", color: "text-pink" },
+  { name: "Özel Diyet Menü", price: "40 TL/gün", color: "text-blue" },
+  { name: "İlaç Uygulama", price: "25 TL/gün", color: "text-orange" },
   { name: "Transfer Hizmeti", price: "100 TL", color: "text-teal" },
 ];
 
@@ -96,7 +96,7 @@ export default function OdalarPage() {
               Odalar & Fiyatlar
             </h1>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto text-lg">
-              Her ihtiyaca uygun, konforlu ve guvenli odalarimiz.
+              Her ihtiyaca uygun, konforlu ve güvenli odalarımız.
             </p>
           </AnimatedSection>
         </div>
@@ -114,7 +114,7 @@ export default function OdalarPage() {
                   <div className="flex items-center gap-3 mb-4">
                     {room.popular && (
                       <span className="px-3 py-1 bg-orange text-white text-xs font-heading font-bold rounded-full">
-                        Populer
+                        Popüler
                       </span>
                     )}
                     <span className={`px-3 py-1 ${room.bgColor} ${room.textColor} text-xs font-heading font-bold rounded-full`}>
@@ -151,7 +151,7 @@ export default function OdalarPage() {
                           : "#FF6B8A",
                     }}
                   >
-                    Bu Odayi Sec
+                    Bu Odayı Seç
                   </Link>
                 </div>
 
@@ -182,7 +182,7 @@ export default function OdalarPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-4">
-              Oda Karsilastirmasi
+              Oda Karşılaştırması
             </h2>
           </AnimatedSection>
 
@@ -191,7 +191,7 @@ export default function OdalarPage() {
               <table className="w-full bg-white rounded-2xl overflow-hidden shadow-sm">
                 <thead>
                   <tr className="bg-dark-brown text-white">
-                    <th className="px-6 py-4 text-left font-heading font-bold">Ozellik</th>
+                    <th className="px-6 py-4 text-left font-heading font-bold">Özellik</th>
                     <th className="px-6 py-4 text-center font-heading font-bold">
                       <span className="text-teal">Standart</span>
                     </th>
@@ -235,7 +235,7 @@ export default function OdalarPage() {
               Ek Hizmetler
             </h2>
             <p className="text-dark-brown/60 font-body">
-              Konaklamaya ekleyebileceginiz ozel hizmetler.
+              Konaklamaya ekleyebileceğiniz özel hizmetler.
             </p>
           </AnimatedSection>
 

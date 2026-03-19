@@ -25,10 +25,10 @@ export default function IletisimPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-dark-brown mb-4">
-              Iletisim & Rezervasyon
+              İletişim & Rezervasyon
             </h1>
             <p className="text-dark-brown/60 font-body max-w-2xl mx-auto text-lg">
-              Rezervasyon yapin veya sorularinizi bize iletin.
+              Rezervasyon yapın veya sorularınızı bize iletin.
             </p>
           </AnimatedSection>
         </div>
@@ -60,10 +60,10 @@ export default function IletisimPage() {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-heading font-bold text-dark-brown mb-2">
-                        Talebiniz Alindi!
+                        Talebiniz Alındı!
                       </h3>
                       <p className="text-dark-brown/60 font-body">
-                        En kisa surede sizinle iletisime gececegiz.
+                        En kısa sürede sizinle iletişime geçeceğiz.
                       </p>
                     </motion.div>
                   ) : (
@@ -73,8 +73,8 @@ export default function IletisimPage() {
                         <h3 className="text-lg font-heading font-bold text-orange mb-4">Sahip Bilgileri</h3>
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div>
-                            <label className={labelClass}>Adi Soyadi *</label>
-                            <input type="text" required className={inputClass} placeholder="Adiniz Soyadiniz" />
+                            <label className={labelClass}>Adı Soyadı *</label>
+                            <input type="text" required className={inputClass} placeholder="Adınız Soyadınız" />
                           </div>
                           <div>
                             <label className={labelClass}>Telefon *</label>
@@ -92,25 +92,25 @@ export default function IletisimPage() {
                         <h3 className="text-lg font-heading font-bold text-teal mb-4">Hayvan Bilgileri</h3>
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div>
-                            <label className={labelClass}>Hayvan Adi *</label>
-                            <input type="text" required className={inputClass} placeholder="Hayvaninizin adi" />
+                            <label className={labelClass}>Hayvan Adı *</label>
+                            <input type="text" required className={inputClass} placeholder="Hayvanınızın adı" />
                           </div>
                           <div>
-                            <label className={labelClass}>Tur *</label>
+                            <label className={labelClass}>Tür *</label>
                             <select required className={inputClass}>
-                              <option value="">Seciniz</option>
-                              <option value="kopek">Kopek</option>
+                              <option value="">Seçiniz</option>
+                              <option value="kopek">Köpek</option>
                               <option value="kedi">Kedi</option>
-                              <option value="diger">Diger</option>
+                              <option value="diger">Diğer</option>
                             </select>
                           </div>
                           <div>
                             <label className={labelClass}>Irk</label>
-                            <input type="text" className={inputClass} placeholder="Irki" />
+                            <input type="text" className={inputClass} placeholder="Irkı" />
                           </div>
                           <div>
-                            <label className={labelClass}>Yas</label>
-                            <input type="text" className={inputClass} placeholder="Ornek: 3 yas" />
+                            <label className={labelClass}>Yaş</label>
+                            <input type="text" className={inputClass} placeholder="Örnek: 3 yaş" />
                           </div>
                         </div>
                       </div>
@@ -122,28 +122,28 @@ export default function IletisimPage() {
                           <div>
                             <label className={labelClass}>Hizmet *</label>
                             <select required className={inputClass}>
-                              <option value="">Seciniz</option>
+                              <option value="">Seçiniz</option>
                               <option value="konaklama">Konaklama</option>
-                              <option value="gunluk">Gunluk Bakim</option>
-                              <option value="spa">Spa & Bakim</option>
-                              <option value="egitim">Egitim</option>
+                              <option value="gunluk">Günlük Bakım</option>
+                              <option value="spa">Spa & Bakım</option>
+                              <option value="egitim">Eğitim</option>
                             </select>
                           </div>
                           <div>
                             <label className={labelClass}>Oda Tipi</label>
                             <select className={inputClass}>
-                              <option value="">Seciniz</option>
+                              <option value="">Seçiniz</option>
                               <option value="standart">Standart</option>
                               <option value="deluxe">Deluxe</option>
                               <option value="vip">VIP Suite</option>
                             </select>
                           </div>
                           <div>
-                            <label className={labelClass}>Giris Tarihi *</label>
+                            <label className={labelClass}>Giriş Tarihi *</label>
                             <input type="date" required className={inputClass} />
                           </div>
                           <div>
-                            <label className={labelClass}>Cikis Tarihi</label>
+                            <label className={labelClass}>Çıkış Tarihi</label>
                             <input type="date" className={inputClass} />
                           </div>
                         </div>
@@ -155,7 +155,7 @@ export default function IletisimPage() {
                         <textarea
                           rows={4}
                           className={inputClass}
-                          placeholder="Ozel istekler, saglik bilgileri, beslenme aliskanliklari..."
+                          placeholder="Özel istekler, sağlık bilgileri, beslenme alışkanlıkları..."
                         />
                       </div>
 
@@ -163,7 +163,7 @@ export default function IletisimPage() {
                         type="submit"
                         className="pill-btn bg-orange text-white text-lg w-full justify-center shadow-lg shadow-orange/30"
                       >
-                        Rezervasyon Gonder
+                        Rezervasyon Gönder
                         <svg width="16" height="16" viewBox="0 0 100 100" fill="white">
                           <ellipse cx="50" cy="65" rx="22" ry="28" />
                           <ellipse cx="28" cy="35" rx="12" ry="14" />
@@ -178,7 +178,7 @@ export default function IletisimPage() {
               </AnimatedSection>
             </div>
 
-            {/* Iletisim Bilgileri */}
+            {/* İletişim Bilgileri */}
             <div>
               <AnimatedSection delay={0.2}>
                 <div className="space-y-6">
@@ -191,8 +191,8 @@ export default function IletisimPage() {
                     </div>
                     <h3 className="font-heading font-bold text-dark-brown mb-1">Adres</h3>
                     <p className="text-dark-brown/60 font-body text-sm">
-                      Cekmekoy Merkez Mah. Hayvan Severler Cad. No: 42
-                      <br />Cekmekoy / Istanbul
+                      Çekmeköy Merkez Mah. Hayvan Severler Cad. No: 42
+                      <br />Çekmeköy / İstanbul
                     </p>
                   </div>
 
@@ -215,7 +215,7 @@ export default function IletisimPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <h3 className="font-heading font-bold text-dark-brown mb-1">Calisma Saatleri</h3>
+                    <h3 className="font-heading font-bold text-dark-brown mb-1">Çalışma Saatleri</h3>
                     <p className="text-dark-brown/60 font-body text-sm">
                       Pazartesi - Cumartesi: 08:00 - 20:00
                       <br />Pazar: 09:00 - 18:00
@@ -251,7 +251,7 @@ export default function IletisimPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-teal/60 font-heading font-bold">Harita Alani</span>
+                <span className="text-teal/60 font-heading font-bold">Harita Alanı</span>
               </div>
             </div>
           </AnimatedSection>
