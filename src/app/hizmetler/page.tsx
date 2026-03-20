@@ -95,10 +95,10 @@ export default function HizmetlerPage() {
 
       {/* Hizmetler Detay */}
       <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-24">
           {services.map((service, i) => (
             <AnimatedSection key={service.title}>
-              <div className={`grid md:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "md:direction-rtl" : ""}`}>
+              <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center ${i % 2 === 1 ? "md:direction-rtl" : ""}`}>
                 <div className={i % 2 === 1 ? "md:order-2" : ""}>
                   <div className={`inline-flex items-center gap-2 px-4 py-2 ${service.bgColor} rounded-full ${service.textColor} text-sm font-heading font-semibold mb-4`}>
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -106,7 +106,7 @@ export default function HizmetlerPage() {
                     </svg>
                     {service.title}
                   </div>
-                  <h2 className={`text-3xl font-heading font-bold text-dark-brown mb-4`}>
+                  <h2 className={`text-2xl sm:text-3xl font-heading font-bold text-dark-brown mb-4`}>
                     {service.title} Hizmeti
                   </h2>
                   <p className="text-dark-brown/60 font-body mb-6 leading-relaxed">
@@ -128,8 +128,8 @@ export default function HizmetlerPage() {
                 </div>
 
                 <div className={i % 2 === 1 ? "md:order-1" : ""}>
-                  <div className={`aspect-[4/3] ${service.bgColor} rounded-[24px] flex items-center justify-center border-2 ${service.borderColor}/20`}>
-                    <svg className={`w-32 h-32 ${service.textColor} opacity-30`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                  <div className={`aspect-[4/3] ${service.bgColor} rounded-2xl sm:rounded-[24px] flex items-center justify-center border-2 ${service.borderColor}/20 overflow-hidden`}>
+                    <svg className={`w-20 h-20 sm:w-32 sm:h-32 ${service.textColor} opacity-30`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                       <path d={service.icon} />
                     </svg>
                   </div>

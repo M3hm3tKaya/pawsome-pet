@@ -121,17 +121,17 @@ export default function OdalarPage() {
                       {room.name}
                     </span>
                   </div>
-                  <h2 className="text-3xl font-heading font-bold text-dark-brown mb-2">
+                  <h2 className="text-2xl sm:text-3xl font-heading font-bold text-dark-brown mb-2">
                     {room.name}
                   </h2>
                   <div className="mb-4">
-                    <span className={`text-3xl font-heading font-bold ${room.textColor}`}>{room.price}</span>
+                    <span className={`text-2xl sm:text-3xl font-heading font-bold ${room.textColor}`}>{room.price}</span>
                     <span className="text-dark-brown/50 font-body"> TL/gece</span>
                   </div>
                   <p className="text-dark-brown/60 font-body mb-6 leading-relaxed">
                     {room.description}
                   </p>
-                  <div className="grid grid-cols-2 gap-3 mb-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     {room.features.map((f) => (
                       <div key={f} className="flex items-center gap-2">
                         <svg className={`w-4 h-4 ${room.textColor} shrink-0`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -156,9 +156,9 @@ export default function OdalarPage() {
                 </div>
 
                 <div className={i % 2 === 1 ? "md:order-1" : ""}>
-                  <div className={`aspect-[4/3] ${room.bgColor} rounded-[24px] flex items-center justify-center border-2 ${room.borderColor}/20`}>
+                  <div className={`aspect-[4/3] ${room.bgColor} rounded-2xl sm:rounded-[24px] flex items-center justify-center border-2 ${room.borderColor}/20 overflow-hidden`}>
                     <div className="text-center">
-                      <svg className={`w-24 h-24 mx-auto ${room.textColor} opacity-30 mb-4`} viewBox="0 0 100 100" fill="currentColor">
+                      <svg className={`w-16 h-16 sm:w-24 sm:h-24 mx-auto ${room.textColor} opacity-30 mb-4`} viewBox="0 0 100 100" fill="currentColor">
                         <ellipse cx="50" cy="65" rx="22" ry="28" />
                         <ellipse cx="28" cy="35" rx="12" ry="14" />
                         <ellipse cx="72" cy="35" rx="12" ry="14" />
@@ -187,18 +187,18 @@ export default function OdalarPage() {
           </AnimatedSection>
 
           <AnimatedSection>
-            <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-2xl overflow-hidden shadow-sm">
+            <div className="-mx-4 sm:mx-0 overflow-x-auto overflow-y-hidden">
+              <table className="w-full min-w-[480px] bg-white sm:rounded-2xl overflow-hidden shadow-sm">
                 <thead>
                   <tr className="bg-dark-brown text-white">
-                    <th className="px-6 py-4 text-left font-heading font-bold">Özellik</th>
-                    <th className="px-6 py-4 text-center font-heading font-bold">
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-heading font-bold text-xs sm:text-sm">Özellik</th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-xs sm:text-sm">
                       <span className="text-teal">Standart</span>
                     </th>
-                    <th className="px-6 py-4 text-center font-heading font-bold">
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-xs sm:text-sm">
                       <span className="text-orange">Deluxe</span>
                     </th>
-                    <th className="px-6 py-4 text-center font-heading font-bold">
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-xs sm:text-sm">
                       <span className="text-pink">VIP</span>
                     </th>
                   </tr>
@@ -206,17 +206,17 @@ export default function OdalarPage() {
                 <tbody>
                   {comparison.map((row, i) => (
                     <tr key={row.feature} className={i % 2 === 0 ? "bg-warm-white/50" : "bg-white"}>
-                      <td className="px-6 py-4 font-body font-medium text-dark-brown">{row.feature}</td>
-                      <td className="px-6 py-4 text-center text-dark-brown/70 font-body text-sm">{row.standart}</td>
-                      <td className="px-6 py-4 text-center text-dark-brown/70 font-body text-sm">{row.deluxe}</td>
-                      <td className="px-6 py-4 text-center text-dark-brown/70 font-body text-sm">{row.vip}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 font-body font-medium text-dark-brown text-xs sm:text-sm">{row.feature}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-dark-brown/70 font-body text-xs sm:text-sm">{row.standart}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-dark-brown/70 font-body text-xs sm:text-sm">{row.deluxe}</td>
+                      <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-dark-brown/70 font-body text-xs sm:text-sm">{row.vip}</td>
                     </tr>
                   ))}
                   <tr className="bg-dark-brown/5">
-                    <td className="px-6 py-4 font-heading font-bold text-dark-brown">Fiyat</td>
-                    <td className="px-6 py-4 text-center font-heading font-bold text-teal">250 TL</td>
-                    <td className="px-6 py-4 text-center font-heading font-bold text-orange">400 TL</td>
-                    <td className="px-6 py-4 text-center font-heading font-bold text-pink">600 TL</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-heading font-bold text-dark-brown text-xs sm:text-sm">Fiyat</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-teal text-xs sm:text-sm">250 TL</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-orange text-xs sm:text-sm">400 TL</td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center font-heading font-bold text-pink text-xs sm:text-sm">600 TL</td>
                   </tr>
                 </tbody>
               </table>
@@ -239,12 +239,12 @@ export default function OdalarPage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {extras.map((extra, i) => (
               <AnimatedSection key={extra.name} delay={i * 0.05}>
-                <div className="card-hover flex items-center justify-between p-4 bg-warm-white rounded-2xl">
-                  <span className="font-body text-dark-brown font-medium">{extra.name}</span>
-                  <span className={`${extra.color} font-heading font-bold text-sm`}>{extra.price}</span>
+                <div className="card-hover flex items-center justify-between p-4 bg-warm-white rounded-2xl min-h-[44px]">
+                  <span className="font-body text-dark-brown font-medium text-sm sm:text-base">{extra.name}</span>
+                  <span className={`${extra.color} font-heading font-bold text-sm shrink-0 ml-3`}>{extra.price}</span>
                 </div>
               </AnimatedSection>
             ))}

@@ -119,11 +119,11 @@ export default function Home() {
                 </svg>
                 İstanbul Çekmeköy
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark-brown leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark-brown leading-tight mb-6">
                 Evcil Dostunuz İçin{" "}
                 <span className="text-orange">Pawsome</span> Bir Tatil!
               </h1>
-              <p className="text-lg text-dark-brown/70 font-body mb-8 max-w-lg">
+              <p className="text-base sm:text-lg text-dark-brown/70 font-body mb-8 max-w-lg">
                 Köpek ve kedileriniz için 5 yıldızlı konaklama, spa, eğitim ve
                 günlük bakım hizmetleri. Onlar da tatili hak ediyor!
               </p>
@@ -156,17 +156,17 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2, ease: [0.34, 1.56, 0.64, 1] }}
               className="relative"
             >
-              <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-orange-light via-pink-light to-teal-light rounded-[32px] flex items-center justify-center relative overflow-hidden">
-                <svg className="w-48 h-48 text-orange/30" viewBox="0 0 100 100" fill="currentColor">
+              <div className="aspect-square w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto bg-gradient-to-br from-orange-light via-pink-light to-teal-light rounded-[24px] sm:rounded-[32px] flex items-center justify-center relative overflow-hidden">
+                <svg className="w-32 h-32 sm:w-48 sm:h-48 text-orange/30" viewBox="0 0 100 100" fill="currentColor">
                   <ellipse cx="50" cy="65" rx="22" ry="28" />
                   <ellipse cx="28" cy="35" rx="12" ry="14" />
                   <ellipse cx="72" cy="35" rx="12" ry="14" />
                   <ellipse cx="15" cy="55" rx="10" ry="12" />
                   <ellipse cx="85" cy="55" rx="10" ry="12" />
                 </svg>
-                <div className="absolute top-6 right-6 w-16 h-16 bg-orange/20 rounded-full animate-float" />
-                <div className="absolute bottom-10 left-6 w-12 h-12 bg-teal/20 rounded-full animate-float-delay" />
-                <div className="absolute top-1/2 right-10 w-8 h-8 bg-pink/20 rounded-full animate-float-delay-2" />
+                <div className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 sm:w-16 sm:h-16 bg-orange/20 rounded-full animate-float" />
+                <div className="absolute bottom-6 left-4 sm:bottom-10 sm:left-6 w-8 h-8 sm:w-12 sm:h-12 bg-teal/20 rounded-full animate-float-delay" />
+                <div className="absolute top-1/2 right-6 sm:right-10 w-6 h-6 sm:w-8 sm:h-8 bg-pink/20 rounded-full animate-float-delay-2" />
               </div>
             </motion.div>
           </div>
@@ -187,11 +187,11 @@ export default function Home() {
             </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {services.map((service, i) => (
               <AnimatedSection key={service.title} delay={i * 0.1}>
                 <div
-                  className={`card-hover p-6 rounded-2xl ${service.bg} border-2 ${service.border}/20 cursor-pointer`}
+                  className={`card-hover p-5 sm:p-6 rounded-2xl ${service.bg} border-2 ${service.border}/20 cursor-pointer`}
                 >
                   <div className={`w-14 h-14 rounded-2xl bg-white flex items-center justify-center mb-4 shadow-sm`}>
                     <svg className={`w-7 h-7 ${service.textColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -239,9 +239,9 @@ export default function Home() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="aspect-[4/3] bg-gradient-to-br from-teal-light to-orange-light rounded-[24px] flex items-center justify-center">
+              <div className="aspect-[4/3] bg-gradient-to-br from-teal-light to-orange-light rounded-2xl sm:rounded-[24px] flex items-center justify-center overflow-hidden">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-orange mb-2">10+</div>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-orange mb-2">10+</div>
                   <div className="text-dark-brown/60 font-body">Yıllık Deneyim</div>
                 </div>
               </div>
@@ -264,11 +264,11 @@ export default function Home() {
             </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {rooms.map((room, i) => (
               <AnimatedSection key={room.name} delay={i * 0.1}>
                 <div
-                  className={`card-hover relative bg-warm-white rounded-2xl p-8 border-2 ${room.color}/30 text-center`}
+                  className={`card-hover relative bg-warm-white rounded-2xl p-6 sm:p-8 border-2 ${room.color}/30 text-center`}
                 >
                   {room.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -281,7 +281,7 @@ export default function Home() {
                     {room.name}
                   </div>
                   <div className="mb-4">
-                    <span className="text-4xl font-heading font-bold text-dark-brown">{room.price}</span>
+                    <span className="text-3xl sm:text-4xl font-heading font-bold text-dark-brown">{room.price}</span>
                     <span className="text-dark-brown/50 font-body"> TL/gece</span>
                   </div>
                   <ul className="space-y-3 mb-8">
@@ -321,10 +321,10 @@ export default function Home() {
             </p>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((t, i) => (
               <AnimatedSection key={t.name} delay={i * 0.1}>
-                <div className="card-hover bg-white rounded-2xl p-6 shadow-sm">
+                <div className="card-hover bg-white rounded-2xl p-5 sm:p-6 shadow-sm">
                   <div className="flex gap-1 mb-4">
                     {[...Array(t.rating)].map((_, j) => (
                       <svg key={j} className="w-5 h-5 text-orange" fill="currentColor" viewBox="0 0 20 20">
@@ -348,13 +348,13 @@ export default function Home() {
 
       {/* Canlı Kamera CTA */}
       <section className="relative overflow-hidden">
-        <div className="bg-gradient-to-r from-orange via-pink to-teal py-16">
+        <div className="bg-gradient-to-r from-orange via-pink to-teal py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <AnimatedSection>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-4">
                 Canlı Kamera ile Takip Edin
               </h2>
-              <p className="text-white/80 font-body mb-8 max-w-2xl mx-auto">
+              <p className="text-white/80 font-body mb-8 max-w-2xl mx-auto text-sm sm:text-base">
                 Evcil hayvanınızı her an izleyebilirsiniz. Deluxe ve VIP odalarda canlı kamera erişimi.
               </p>
               <Link

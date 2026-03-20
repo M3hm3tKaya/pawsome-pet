@@ -58,12 +58,12 @@ export default function HakkimizPage() {
       {/* Hikaye */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <AnimatedSection>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-light rounded-full text-orange text-sm font-heading font-semibold mb-6">
                 Hikayemiz
               </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-dark-brown mb-6">
                 2016&apos;dan Beri Evcil Dostlarınızın Yanındayız
               </h2>
               <div className="space-y-4 text-dark-brown/70 font-body leading-relaxed">
@@ -85,22 +85,22 @@ export default function HakkimizPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-orange-light rounded-[24px] p-8 text-center">
-                  <div className="text-4xl font-heading font-bold text-orange mb-2">10+</div>
-                  <div className="text-dark-brown/60 font-body text-sm">Yıl Deneyim</div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="bg-orange-light rounded-2xl sm:rounded-[24px] p-5 sm:p-8 text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-orange mb-1 sm:mb-2">10+</div>
+                  <div className="text-dark-brown/60 font-body text-xs sm:text-sm">Yıl Deneyim</div>
                 </div>
-                <div className="bg-teal-light rounded-[24px] p-8 text-center">
-                  <div className="text-4xl font-heading font-bold text-teal mb-2">5000+</div>
-                  <div className="text-dark-brown/60 font-body text-sm">Mutlu Misafir</div>
+                <div className="bg-teal-light rounded-2xl sm:rounded-[24px] p-5 sm:p-8 text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-teal mb-1 sm:mb-2">5000+</div>
+                  <div className="text-dark-brown/60 font-body text-xs sm:text-sm">Mutlu Misafir</div>
                 </div>
-                <div className="bg-pink-light rounded-[24px] p-8 text-center">
-                  <div className="text-4xl font-heading font-bold text-pink mb-2">15+</div>
-                  <div className="text-dark-brown/60 font-body text-sm">Uzman Ekip</div>
+                <div className="bg-pink-light rounded-2xl sm:rounded-[24px] p-5 sm:p-8 text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-pink mb-1 sm:mb-2">15+</div>
+                  <div className="text-dark-brown/60 font-body text-xs sm:text-sm">Uzman Ekip</div>
                 </div>
-                <div className="bg-blue-light rounded-[24px] p-8 text-center">
-                  <div className="text-4xl font-heading font-bold text-blue mb-2">4.9</div>
-                  <div className="text-dark-brown/60 font-body text-sm">Google Puan</div>
+                <div className="bg-blue-light rounded-2xl sm:rounded-[24px] p-5 sm:p-8 text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-blue mb-1 sm:mb-2">4.9</div>
+                  <div className="text-dark-brown/60 font-body text-xs sm:text-sm">Google Puan</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -122,14 +122,14 @@ export default function HakkimizPage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8">
             {team.map((member, i) => (
               <AnimatedSection key={member.name} delay={i * 0.08}>
                 <div className="text-center group">
-                  <div className={`w-24 h-24 mx-auto rounded-full ${member.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}
+                  <div className={`w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full ${member.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}
                     style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
                   >
-                    <svg className={`w-10 h-10 ${member.textColor} opacity-40`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <svg className={`w-8 h-8 sm:w-10 sm:h-10 ${member.textColor} opacity-40`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
@@ -153,10 +153,10 @@ export default function HakkimizPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {values.map((value, i) => (
               <AnimatedSection key={value.title} delay={i * 0.1}>
-                <div className={`card-hover ${value.bgColor} rounded-2xl p-8 text-center`}>
+                <div className={`card-hover ${value.bgColor} rounded-2xl p-6 sm:p-8 text-center`}>
                   <div className="w-16 h-16 mx-auto bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm">
                     <svg className={`w-8 h-8 ${value.color}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                       <path strokeLinecap="round" strokeLinejoin="round" d={value.icon} />

@@ -67,7 +67,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-xl text-dark-brown hover:bg-orange-light transition-colors"
+            className="md:hidden min-w-[44px] min-h-[44px] p-2 rounded-xl text-dark-brown hover:bg-orange-light transition-colors flex items-center justify-center"
             aria-label="Menu"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -96,7 +96,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={clsx(
-                    "block px-4 py-3 rounded-xl text-sm font-medium font-body transition-colors",
+                    "block px-4 py-3 min-h-[44px] rounded-xl text-sm font-medium font-body transition-colors flex items-center",
                     pathname === link.href
                       ? "text-orange bg-orange-light"
                       : "text-dark-brown hover:text-orange hover:bg-orange-light/50"
@@ -108,7 +108,7 @@ export default function Navbar() {
               <Link
                 href="/iletisim"
                 onClick={() => setIsOpen(false)}
-                className="block text-center pill-btn bg-orange text-white text-sm mt-2"
+                className="block text-center pill-btn bg-orange text-white text-sm mt-2 w-full"
               >
                 Rezervasyon
               </Link>

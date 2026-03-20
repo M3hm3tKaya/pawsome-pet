@@ -64,13 +64,13 @@ export default function GaleriPage() {
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Filtre butonları */}
-          <AnimatedSection className="flex flex-wrap justify-center gap-3 mb-12">
+          <AnimatedSection className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={clsx(
-                  "pill-btn text-sm border-2 transition-all",
+                  "pill-btn text-xs sm:text-sm border-2 transition-all min-h-[44px]",
                   activeCategory === cat
                     ? "bg-orange text-white border-orange"
                     : "bg-white text-dark-brown border-dark-brown/10 hover:border-orange hover:text-orange"
@@ -128,7 +128,7 @@ export default function GaleriPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-dark-brown/80 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-[100] bg-dark-brown/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
             onClick={() => setLightbox(null)}
           >
             <motion.div
@@ -136,11 +136,11 @@ export default function GaleriPage() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.5, opacity: 0 }}
               transition={{ ease: [0.34, 1.56, 0.64, 1] }}
-              className="relative max-w-2xl w-full"
+              className="relative max-w-2xl w-full overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className={`aspect-[4/3] bg-gradient-to-br ${lightbox.bgGradient} rounded-[24px] flex items-center justify-center`}>
-                <svg className={`w-32 h-32 ${lightbox.color} opacity-30`} viewBox="0 0 100 100" fill="currentColor">
+              <div className={`aspect-[4/3] bg-gradient-to-br ${lightbox.bgGradient} rounded-2xl sm:rounded-[24px] flex items-center justify-center overflow-hidden`}>
+                <svg className={`w-20 h-20 sm:w-32 sm:h-32 ${lightbox.color} opacity-30`} viewBox="0 0 100 100" fill="currentColor">
                   <ellipse cx="50" cy="65" rx="22" ry="28" />
                   <ellipse cx="28" cy="35" rx="12" ry="14" />
                   <ellipse cx="72" cy="35" rx="12" ry="14" />
@@ -154,7 +154,7 @@ export default function GaleriPage() {
               </div>
               <button
                 onClick={() => setLightbox(null)}
-                className="absolute -top-3 -right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg text-dark-brown hover:bg-orange hover:text-white transition-colors"
+                className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-11 h-11 sm:w-10 sm:h-10 min-w-[44px] min-h-[44px] bg-white rounded-full flex items-center justify-center shadow-lg text-dark-brown hover:bg-orange hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

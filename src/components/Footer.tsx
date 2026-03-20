@@ -24,9 +24,9 @@ export default function Footer() {
         <PawIcon className="absolute top-6 left-[45%]" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+          <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <svg width="28" height="28" viewBox="0 0 100 100" fill="#FF8C42">
                 <ellipse cx="50" cy="65" rx="22" ry="28" />
@@ -46,26 +46,26 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading font-bold text-orange mb-4">Sayfalar</h4>
-            <ul className="space-y-2 text-sm font-body">
-              <li><Link href="/" className="text-white/70 hover:text-orange transition-colors">Ana Sayfa</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Hizmetler</Link></li>
-              <li><Link href="/odalar" className="text-white/70 hover:text-orange transition-colors">Odalar & Fiyatlar</Link></li>
-              <li><Link href="/galeri" className="text-white/70 hover:text-orange transition-colors">Galeri</Link></li>
-              <li><Link href="/hakkimizda" className="text-white/70 hover:text-orange transition-colors">Hakkımızda</Link></li>
+            <ul className="space-y-1 text-sm font-body">
+              <li><Link href="/" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Ana Sayfa</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Hizmetler</Link></li>
+              <li><Link href="/odalar" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Odalar & Fiyatlar</Link></li>
+              <li><Link href="/galeri" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Galeri</Link></li>
+              <li><Link href="/hakkimizda" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Hakkımızda</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-heading font-bold text-orange mb-4">Hizmetler</h4>
-            <ul className="space-y-2 text-sm font-body">
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Konaklama</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Günlük Bakım</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Spa & Bakım</Link></li>
-              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors">Eğitim</Link></li>
+            <ul className="space-y-1 text-sm font-body">
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Konaklama</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Günlük Bakım</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Spa & Bakım</Link></li>
+              <li><Link href="/hizmetler" className="text-white/70 hover:text-orange transition-colors py-1.5 min-h-[44px] sm:min-h-0 flex items-center">Eğitim</Link></li>
             </ul>
           </div>
 
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="font-heading font-bold text-orange mb-4">İletişim</h4>
             <ul className="space-y-3 text-sm font-body text-white/70">
               <li className="flex items-start gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/50 font-body">
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10 text-center text-xs sm:text-sm text-white/50 font-body">
           <p>&copy; 2026 Pawsome Pet Hotel. Tüm hakları saklıdır.</p>
         </div>
       </div>
